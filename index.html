@@ -238,7 +238,8 @@
     .close-btn:hover{
       background:rgba(255,255,255,0.16);
     }
-    @media (max-width: 600px) {
+
+@media (max-width: 600px) {
 
   .calculator {
     padding: 18px;
@@ -258,9 +259,23 @@
     width: 100%;
   }
 
-  .elation-wrapper.active input {
-    width: 100%;
-  }
+  .elation-wrapper {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.elation-wrapper.active {
+  gap: 6px;
+}
+
+.elation-wrapper.active .elation-label {
+  width: 100%;
+}
+
+.elation-wrapper.active input {
+  width: 100%;
+  flex: none;
+}
 
   .state-img {
     width: 140px;
@@ -301,21 +316,21 @@
       <h>Aha Speed Guide</h2>
 
       <p>
-        Aha SPD depends on the SPD of Elation characters in the team.
+        Aha Speed depends on the speed of your elation characters.
       </p>
 
       <br>
 
-      <p><strong> General SPD breakpoints for Aha (MOC):</strong></p>
+      <p><strong>Important Speed breakpoints to look for for Aha:</strong></p>
 
       <ul>
-        <li>120.0 SPD = 3 Aha Instants in 2 cycles</li>
-        <li>133.4 SPD = 2 Aha Instants in 1 cycle</li>
-        <li>142.9 SPD = 5 Aha Instants in 3 cycles</li>
+        <li>120 SPD = 3 Aha Instants in the first 2 cycles</li>
+        <li>133.4 SPD = 2 Aha Instants in the 1st Cycle</li>
+        <li>142.9 SPD = 5 Aha Instants in the first 3 cycles</li>
       </ul>
 
       <p>
-        Do note that in-combat SPD buffs and debuffs on your characters
+        Do note in combat SPD buffs and debuffs on your characters
         also affect Aha SPD, so keep those in mind when calculating.
       </p>
 
