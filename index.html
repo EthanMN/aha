@@ -35,7 +35,7 @@
       content:'';
       position:absolute;
       inset:0;
-      background:url("https://static.wikia.nocookie.net/houkai-star-rail/images/1/1e/HoYoLAB_Article_I_love_it_when_Players_say%2C_Huh_Grand_Euphoria_4.png/revision/latest?cb=20260203215528")
+      background:url("bg.webp")
         center/cover no-repeat;
       filter:brightness(0.35);
       z-index:0;
@@ -79,7 +79,6 @@
       font-size:14px;
     }
 
-    /* ✅ REMOVED SPINNERS / SLIDERS */
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button{
       -webkit-appearance:none;
@@ -258,21 +257,21 @@
       <h>Aha Speed Guide</h2>
 
       <p>
-        Aha Speed depends on the speed of your elation characters.
+        Aha SPD depends on the SPD of Elation characters in the team.
       </p>
 
       <br>
 
-      <p><strong>Important Speed breakpoints to look for for Aha:</strong></p>
+      <p><strong> General SPD breakpoints for Aha (MOC):</strong></p>
 
       <ul>
-        <li>120 SPD = 3 Aha Instants in the first 2 cycles</li>
-        <li>133.4 SPD = 2 Aha Instants in the 1st Cycle</li>
-        <li>142.9 SPD = 5 Aha Instants in the first 3 cycles</li>
+        <li>120.0 SPD = 3 Aha Instants in 2 cycles</li>
+        <li>133.4 SPD = 2 Aha Instants in 1 cycle</li>
+        <li>142.9 SPD = 5 Aha Instants in 3 cycles</li>
       </ul>
 
       <p>
-        Do note in combat SPD buffs and debuffs on your characters
+        Do note that in-combat SPD buffs and debuffs on your characters
         also affect Aha SPD, so keep those in mind when calculating.
       </p>
 
@@ -354,7 +353,7 @@ function calculate(){
 
   if(count === 0){
     setState(
-      "https://static.wikia.nocookie.net/houkai-star-rail/images/e/e1/Sticker_PPG_27_Silver_Wolf_LV.999_02.png/revision/latest?cb=20260424084842",
+      "sw0.webp",
       "No Aha bro!"
     );
     return;
@@ -362,7 +361,7 @@ function calculate(){
 
   if(count > 4){
     setState(
-      "https://static.wikia.nocookie.net/houkai-star-rail/images/9/97/Sticker_PPG_04_Silver_Wolf_01.png/revision/latest?cb=20240201004240",
+      "sw1.webp",
       "HAHA! This isn't Currency Wars. Max 4 characters bro"
     );
     return;
@@ -385,7 +384,7 @@ function calculate(){
   }
 
   setState(
-    "https://static.wikia.nocookie.net/houkai-star-rail/images/b/bf/Sticker_PPG_27_Silver_Wolf_LV.999_03.png/revision/latest?cb=20260424084839",
+    "sw999.webp",
     `Aha Speed: ${aha.toFixed(2)}`
   );
 }
