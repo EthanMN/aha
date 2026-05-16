@@ -410,6 +410,14 @@ function calculate(){
     return;
   }
 
+  if(count < 0){
+    setState(
+      "sw2.webp",
+      "Negative Elation? Bro, are you time traveling or something?"
+    );
+    return;
+  }
+
   if(count === 0){
     setState(
       "sw0.webp",
